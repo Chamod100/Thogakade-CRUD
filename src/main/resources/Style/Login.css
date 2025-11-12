@@ -1,0 +1,74 @@
+ //login.css - modern card style for login
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", "System";
+}
+
+//background image for whole window (adjust path as needed)
+.anchor-pane {
+    -fx-background-image: url("/images/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+//style the card (VBox) to look like a centered card
+#card {
+    -fx-pref-width: 360px;
+    -fx-padding: 24px;
+    -fx-background-color: rgba(255,255,255,0.92);
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0.2, 0, 6);
+    -fx-alignment: center;
+}
+
+//Title
+#lblTitle {
+    -fx-font-size: 26px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #2b2b2b;
+}
+
+//field labels
+.label.field-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #444;
+    -fx-padding: 6 0 0 4;
+    -fx-alignment: center-left;
+    -fx-pref-width: 320px;
+}
+
+//textfields
+.text-field {
+    -fx-pref-width: 320px;
+    -fx-pref-height: 38px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 6 10 6 10;
+    -fx-background-color: #fff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.03), 6, 0.2, 0, 2);
+}
+
+//button
+.button {
+    -fx-pref-width: 160px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 10;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(#4facfe, #00f2fe);
+    -fx-cursor: hand;
+}
+
+//small note
+#lblNote {
+    -fx-font-size: 11px;
+    -fx-text-fill: #888;
+    -fx-padding: 4 0 0 0;
+}
+
+//avatar border & shadow via effect in FXML/controller (optional)
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0.2, 0, 3);
+}
