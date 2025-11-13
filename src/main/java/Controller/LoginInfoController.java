@@ -34,7 +34,7 @@ public class LoginInfoController {
                 currentStage.close();
 
                 Stage stage = new Stage();
-                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/management_form.fxml"))));
+                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/management_form.fxml"))));
                 stage.setTitle("Management Panel");
                 stage.show();
 
