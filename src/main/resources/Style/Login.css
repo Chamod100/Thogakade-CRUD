@@ -1,4 +1,51 @@
- //login.css - modern card style for login
+ /* Text fields (Username & Password) සඳහා style එක */
+ .login-field {
+     -fx-font-size: 14px;
+     -fx-background-color: #ecf0f1; /* ලා අළු පාට background */
+     -fx-background-radius: 20; /* වටකුරු corners */
+     -fx-border-color: #bdc3c7;
+     -fx-border-radius: 20;
+     -fx-border-width: 1px;
+     -fx-padding: 10px;
+ }
+
+ /* Field එක select (focus) කළාම එන style එක */
+ .login-field:focused {
+     -fx-border-color: #4ca1af; /* Theme එකේ පාටින් border එක highlight වෙනවා */
+     -fx-border-width: 2px;
+ }
+
+ /* "Username", "Password" ලේබල් සඳහා style එක */
+ .field-label {
+     -fx-font-size: 13px;
+     -fx-font-weight: bold;
+     -fx-text-fill: #34495e;
+     -fx-padding: 0 0 0 5px; /* වම් පැත්තෙන් පොඩි ඉඩක් */
+     -fx-alignment: CENTER_LEFT;
+     -fx-max-width: 260px; /* Button එකේ පළලට සමාන කළා */
+ }
+
+ /* Login Button එකේ ප්‍රධාන style එක */
+ .login-button {
+     -fx-background-color: #4ca1af; /* Theme color */
+     -fx-text-fill: white;
+     -fx-font-size: 16px;
+     -fx-font-weight: bold;
+     -fx-background-radius: 25; /* සම්පූර්ණ වටකුරු button එකක් */
+     -fx-cursor: hand; /* Mouse එක ගෙනිච්චම අතක icon එක එන්න */
+ }
+
+ /* Button එක උඩට mouse එක ගෙනිච්චම (Hover) */
+ .login-button:hover {
+     -fx-background-color: #2c3e50; /* Theme එකේ තද පාටට මාරු වෙනවා */
+     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+ }
+
+ /* Button එක click කළාම (Pressed) */
+ .login-button:pressed {
+     -fx-background-color: #253341;
+ }
+ /*//login.css - modern card style for login
 .root {
     -fx-font-family: "Segoe UI", "Roboto", "System";
 }
